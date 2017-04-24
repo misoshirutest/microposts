@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   get 'signup', to: 'users#new'
   # URLをsignupにする
   resources :users, only: [:index, :show, :new, :create]
+
+  resources :microposts, only: [:create, :destroy]
 end
