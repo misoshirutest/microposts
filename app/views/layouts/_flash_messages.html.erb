@@ -1,0 +1,4 @@
+<%# https://www.w3schools.com/bootstrap/bootstrap_alerts.asp %>
+<% flash.each do |message_type, message| %>
+  <div class="alert alert-<%= message_type %>"><%= message %></div>
+<% end %>
